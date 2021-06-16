@@ -53,4 +53,6 @@ while (dice !== 6) {
   }
 }
 
-console.log('hello'`);
+console.log('hello');
+
+console.log('again added');
