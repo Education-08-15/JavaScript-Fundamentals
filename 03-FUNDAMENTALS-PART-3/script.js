@@ -85,3 +85,10 @@ let DATA1 = [17, 21, 23];
 let DATA2 = [12, 5, -5, 0, 4];
 console.log(printForecast(DATA1));
 console.log(printForecast(DATA2));
+
+const printForecasts = (arr) => {
+  return arr.reduce((result, current, index) => {
+    return (result += `${current} ºC  in ${index + 1} days... `);
+  }, '');
+};
+console.log(printForecasts(DATA2));
